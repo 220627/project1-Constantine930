@@ -1,7 +1,8 @@
-package com.revature;
+package P1attempt2;
 
-public class Launcher {
+import P1attempt2.models.users;
 
+public class SableyeIsTheBest {
 	public static void main(String[] args) {
 		
 		//Welcome to P1! 
@@ -22,8 +23,5 @@ public class Launcher {
 //          /,    /`
 //          \\"--\\
 		
-		users Bob = new users;
-		
 	}
-	
 }
