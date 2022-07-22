@@ -4,6 +4,7 @@ import java.sql.Connection;
 import java.sql.SQLException;
 
 import P1attempt2.Controllers.AuthentiCon;
+import P1attempt2.Controllers.reimCon;
 import P1attempt2.util.ConUtil;
 import io.javalin.Javalin;
 
@@ -53,12 +54,14 @@ public class SableyeIsTheBest {
 		//System.out.println(edao.getEmployees());
 		Javalin app = Javalin.create( config -> {config.enableCorsForAllOrigins();} ).start(3000);
 		AuthentiCon AC = new AuthentiCon();
+		reimCon RC = new reimCon();
 
 		//app.get("/employees", EC.getEmpHandler);
 		//app.post("/employees", EC.insertEmpHandler);
-		//app.put("/role/:titile", RC.UpdateRoleSalary);
+		//app.put("/role/:perm", RC.Viewreim);
 		//app.delete("/employees",EC.deleteEmp);
 		app.post("/login", AC.loginHand);
+		app.get("/View", RC.Viewreim);
 		
 	
 	}
