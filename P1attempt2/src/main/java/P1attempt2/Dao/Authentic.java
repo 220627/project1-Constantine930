@@ -12,14 +12,14 @@ public class Authentic {
 	public users Login(String name, String pass) {
 		
 		try(Connection conn =ConUtil.getConnection()){
-			String sql = "select * from ers_users where username = ? and password = ?;";
+			String sql = "select * from ers_users where ers_username = ? and ers_password = ?;";
 			PreparedStatement ps = conn.prepareStatement(sql);
 			ps.setString(1, name);
 			ps.setString(2, pass);
 			ResultSet rs = ps.executeQuery();
 			
 			if(rs.next()) {
-				System.out.println("all good");
+				//System.out.println("all good");
 				users Bob=new users(
 						rs.getString("user_fname"),
 						rs.getString("user_lname"),
