@@ -39,7 +39,15 @@ public Handler UpdateStat=(ctx)->{
 		ctx.status(404);}
 		
 };
-
+public Handler ViewByStat=(ctx)->{
+	if (AuthentiCon.ses!=null) {
+	    ArrayList<ers_reim> Tom = rDao.ViewreimByStatus(AuthentiCon.perm, AuthentiCon.ID, Integer.parseInt(ctx.pathParam("status")));
+	    Gson gson = new Gson();
+	    String rSon = gson.toJson(Tom);
+	    log.info("stuff has been viewed by Status ID");
+		ctx.result(rSon);
+		ctx.status(200);} else {ctx.result("ses ain't available");}
+};
 
 
 }

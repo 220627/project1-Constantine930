@@ -86,6 +86,60 @@ public class reimDAO {
 		
 		
 		return false;}
-
+	public ArrayList<ers_reim> ViewreimByStatus(int perm , int ID, int stat ) {
+		try(Connection conn =ConUtil.getConnection()){
+			ArrayList<ers_reim> bob = new ArrayList<>();
+			Authentic A = new Authentic();
+			if(perm==1) {
+				String sql = "select * from ers_reim where reim_status_id = ?";
+				PreparedStatement ps = conn.prepareStatement(sql);
+				ps.setInt(1, stat);
+				ResultSet rs = ps.executeQuery();
+				while(rs.next()) {
+					ers_reim Bob=new ers_reim(
+							rs.getDouble("reim_amount"),
+							rs.getDate("reim_sub"),
+							rs.getString("reim_desc"),
+							A.UserByID(rs.getInt("reim_auth")),
+							A.UserByID(rs.getInt("reim_res")),
+							A.StatByID(rs.getInt("reim_status_id")),
+							A.TypeBYID(rs.getInt("reim_type_id"))
+							);
+					Bob.setAuth(rs.getInt("reim_auth"));
+					Bob.setRes(rs.getInt("reim_res"));
+					Bob.setStatus(rs.getInt("reim_status_id"));
+					Bob.setType(rs.getInt("reim_type_id"));
+					bob.add(Bob);}
+					return bob;
+			}else  if(ID!=0){
+				String sql = "select * from ers_reim where reim_auth = ? and reim_status_id=?;";
+				PreparedStatement ps = conn.prepareStatement(sql);
+				ps.setInt(1, ID);
+				ps.setInt(2, stat);
+				ResultSet rs = ps.executeQuery();
+				while(rs.next()) {
+					ers_reim Bob=new ers_reim(
+							rs.getDouble("reim_amount"),
+							rs.getDate("reim_sub"),
+							rs.getString("reim_desc"),
+							rs.getInt("reim_auth"),
+							rs.getInt("reim_res"),
+							A.StatByID(rs.getInt("reim_status_id")),
+							A.TypeBYID(rs.getInt("reim_type_id"))
+							);
+					Bob.setStatus(rs.getInt("reim_status_id"));
+					Bob.setType(rs.getInt("reim_type_id"));
+					bob.add(Bob);
+				}
+					return bob;
+				
+			}else {System.out.println("something is off probably login");}
+			
+		}catch(SQLException e) {
+			System.out.println("something went wrong");
+			e.printStackTrace();
+		}
+		return null;
+	}
 }
 

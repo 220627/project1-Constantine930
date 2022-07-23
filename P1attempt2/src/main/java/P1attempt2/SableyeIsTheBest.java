@@ -63,7 +63,7 @@ public class SableyeIsTheBest {
 		app.post("/login", AC.loginHand);
 		app.get("/View", RC.Viewreim);
 		app.put("/Reim/:id", RC.UpdateStat);
-		
+		app.get("/View/:status", RC.ViewByStat);
 	
 	}
 		
