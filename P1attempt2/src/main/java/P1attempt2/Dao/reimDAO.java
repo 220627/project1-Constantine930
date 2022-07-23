@@ -13,6 +13,7 @@ public class reimDAO {
 	public ArrayList<ers_reim> Viewreim(int perm , int ID ) {
 	try(Connection conn =ConUtil.getConnection()){
 		ArrayList<ers_reim> bob = new ArrayList<>();
+		Authentic A = new Authentic();
 		if(perm==1) {
 			String sql = "select * from ers_reim;";
 			PreparedStatement ps = conn.prepareStatement(sql);
@@ -23,8 +24,8 @@ public class reimDAO {
 						rs.getDouble("reim_amount"),
 						rs.getDate("reim_sub"),
 						rs.getString("reim_desc"),
-						rs.getInt("reim_auth"),
-						rs.getInt("reim_res"),
+						A.UserByID(rs.getInt("reim_auth")),
+						A.UserByID(rs.getInt("reim_res")),
 						rs.getInt("reim_status_id"),
 						rs.getInt("reim_type_id")
 						);
@@ -37,6 +38,7 @@ public class reimDAO {
 			ResultSet rs = ps.executeQuery();
 			while(rs.next()) {
 				//first step without the extra classes fluff.
+				//small preference I don't want the employees to see the name of the respondent and they already know their own name.
 				ers_reim Bob=new ers_reim(
 						rs.getDouble("reim_amount"),
 						rs.getDate("reim_sub"),
@@ -57,4 +59,27 @@ public class reimDAO {
 		e.printStackTrace();
 	}
 	return null;
-}}
+}
+	public boolean UpdateStatus(int perm, int stat, int id) {
+		try(Connection Conn= ConUtil.getConnection()){
+			if (perm==1) {
+			String sql = "Update ers_reim set reim_status_id=? where reim_id =?;";
+			PreparedStatement ps=Conn.prepareStatement(sql);
+			ps.setInt(1, stat);
+			ps.setInt(2,id);
+			ps.executeUpdate();
+			System.out.println("reim status with id " + id + " Updated to status " +stat);
+			return true;
+			}else{System.out.println("No permision/bad permission");return false;}
+		}catch(SQLException e){
+			System.out.println("Something is off");
+			e.printStackTrace();
+		}
+		
+		
+		
+		
+		return false;}
+
+}
+

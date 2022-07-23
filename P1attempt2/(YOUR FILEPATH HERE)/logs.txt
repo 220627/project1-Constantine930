@@ -8,3 +8,26 @@
 2022-07-22 13:25:11 INFO  reimCon:23 - stuff has been viewed
 2022-07-22 13:27:37 INFO  AuthentiCon:35 - User Logged in!
 2022-07-22 13:27:40 INFO  reimCon:23 - stuff has been viewed
+2022-07-22 13:27:50 INFO  AuthentiCon:35 - User Logged in!
+2022-07-22 13:27:53 INFO  reimCon:23 - stuff has been viewed
+2022-07-23 14:22:09 WARN  reimCon:37 - Someone did me dirty
+2022-07-23 14:22:32 INFO  AuthentiCon:35 - User Logged in!
+2022-07-23 14:22:38 INFO  reimCon:35 - Unaccepted perm
+2022-07-23 14:22:48 INFO  AuthentiCon:35 - User Logged in!
+2022-07-23 14:22:52 INFO  reimCon:32 - Status Updated
+2022-07-23 14:23:05 INFO  reimCon:23 - stuff has been viewed
+2022-07-23 14:23:59 INFO  reimCon:32 - Status Updated
+2022-07-23 14:24:02 INFO  reimCon:23 - stuff has been viewed
+2022-07-23 14:41:46 INFO  AuthentiCon:35 - User Logged in!
+2022-07-23 14:41:49 INFO  reimCon:23 - stuff has been viewed
+2022-07-23 14:43:29 INFO  AuthentiCon:35 - User Logged in!
+2022-07-23 14:43:32 INFO  reimCon:23 - stuff has been viewed
+2022-07-23 14:44:19 INFO  AuthentiCon:35 - User Logged in!
+2022-07-23 14:44:22 INFO  reimCon:23 - stuff has been viewed
+2022-07-23 14:46:59 INFO  AuthentiCon:35 - User Logged in!
+2022-07-23 14:47:02 INFO  reimCon:23 - stuff has been viewed
+2022-07-23 14:49:48 INFO  AuthentiCon:35 - User Logged in!
+2022-07-23 14:49:50 INFO  reimCon:23 - stuff has been viewed
+2022-07-23 14:49:57 INFO  reimCon:35 - Unaccepted perm
+2022-07-23 14:50:01 INFO  AuthentiCon:35 - User Logged in!
+2022-07-23 14:50:03 INFO  reimCon:23 - stuff has been viewed

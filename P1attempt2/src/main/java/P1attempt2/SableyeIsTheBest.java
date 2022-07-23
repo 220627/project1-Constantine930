@@ -58,10 +58,11 @@ public class SableyeIsTheBest {
 
 		//app.get("/employees", EC.getEmpHandler);
 		//app.post("/employees", EC.insertEmpHandler);
-		//app.put("/role/:perm", RC.Viewreim);
+		
 		//app.delete("/employees",EC.deleteEmp);
 		app.post("/login", AC.loginHand);
 		app.get("/View", RC.Viewreim);
+		app.put("/Reim/:id", RC.UpdateStat);
 		
 	
 	}

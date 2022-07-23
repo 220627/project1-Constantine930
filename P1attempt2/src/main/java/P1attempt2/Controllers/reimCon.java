@@ -24,4 +24,23 @@ public Handler Viewreim=(ctx)->{
 	ctx.result(rSon);
 	ctx.status(200);} else {ctx.result("ses ain't available");}
     };
+public Handler UpdateStat=(ctx)->{
+	if (AuthentiCon.ses!=null) {
+	int id = Integer.parseInt(ctx.pathParam("id"));
+	int stat = Integer.parseInt(ctx.body());
+	if(rDao.UpdateStatus(AuthentiCon.perm, stat, id)) {
+		log.info("Status Updated");
+		ctx.status(202);
+	}else {
+		log.info("Unaccepted perm");
+		ctx.status(406);
+	}}else {log.warn("Someone did me dirty");
+		ctx.result("No session");
+		ctx.status(404);}
+		
+};
+
+
+
 }
+

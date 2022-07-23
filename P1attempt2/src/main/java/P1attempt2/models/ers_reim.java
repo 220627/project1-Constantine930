@@ -7,7 +7,9 @@ public class ers_reim {
 	private Date time;
 	private String desc;
 	private int auth;
+	private users aut;
 	private int res;
+	private users respondant;
 	private int status;
 	private int type;
 
@@ -63,9 +65,31 @@ public class ers_reim {
 		this.status = status;
 		this.type = type;
 	}
+	
+	public ers_reim(double amount, Date time, String desc, users aut, users respondant, int status, int type) {
+		super();
+		this.amount = amount;
+		this.time = time;
+		this.desc = desc;
+		this.aut = aut;
+		this.respondant = respondant;
+		this.status = status;
+		this.type = type;
+	}
+	public users getAut() {
+		return aut;
+	}
+	public void setAut(users aut) {
+		this.aut = aut;
+	}
+	public users getRespondant() {
+		return respondant;
+	}
+	public void setRespondant(users respondant) {
+		this.respondant = respondant;
+	}
 	@Override
 	public String toString() {
-		return "ers_reim [amount=" + amount + ", time=" + time + ", desc=" + desc + ", auth=" + auth + ", res=" + res
-				+ ", status=" + status + ", type=" + type + "]";
+		return "ers_reim [amount=" + amount + ", time=" + time + ", desc=" + desc + ", status=" + status + ", type=" + type + "]";
 	}
 }
