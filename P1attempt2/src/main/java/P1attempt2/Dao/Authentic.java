@@ -5,6 +5,7 @@ import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 
+import P1attempt2.models.reimstatus;
 import P1attempt2.models.users;
 import P1attempt2.util.ConUtil;
 
@@ -73,7 +74,46 @@ public class Authentic {
 		
 		return null;
 	}
-	
+// I can just flood this spot with my object finding methods flood is a strong word, 2 more finders.
+	public String StatByID(int ID) {try(Connection conn =ConUtil.getConnection()){
+		String sql = "select * from ers_reim_status where reim_status_id=?;";
+		PreparedStatement ps = conn.prepareStatement(sql);
+		ps.setInt(1, ID);
+		ResultSet rs = ps.executeQuery();
+		
+		if(rs.next()) {
+			//System.out.println("all good");
+			return rs.getString("reim_status");
+			
+		}else {
+			System.out.println("YOU MESSED UP something?");
+		}
+		
+	}catch(SQLException e) {
+		System.out.println("something went wrong");
+		e.printStackTrace();
+	}
+	return null;}
 
+	public String TypeBYID(int ID) {
+		try(Connection conn =ConUtil.getConnection()){
+			String sql = "select * from ers_reim_type where reim_type_ID=?;";
+			PreparedStatement ps = conn.prepareStatement(sql);
+			ps.setInt(1, ID);
+			ResultSet rs = ps.executeQuery();
+			
+			if(rs.next()) {
+				//System.out.println("all good");
+				return rs.getString("reim_type");
+				
+			}else {
+				System.out.println("YOU MESSED UP something?");
+			}
+			
+		}catch(SQLException e) {
+			System.out.println("something went wrong");
+			e.printStackTrace();
+		}
+		return null;}
 
 }

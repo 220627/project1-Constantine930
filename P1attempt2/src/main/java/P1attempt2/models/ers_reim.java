@@ -11,8 +11,43 @@ public class ers_reim {
 	private int res;
 	private users respondant;
 	private int status;
+	private String stat;
 	private int type;
+	private String types;
+	
 
+	public ers_reim(double amount, Date time, String desc, int auth, int res, String stat, String types) {
+		super();
+		this.amount = amount;
+		this.time = time;
+		this.desc = desc;
+		this.auth = auth;
+		this.res = res;
+		this.stat = stat;
+		this.types = types;
+	}
+	public ers_reim(double amount, Date time, String desc, users aut, users respondant, String stat, String types) {
+		super();
+		this.amount = amount;
+		this.time = time;
+		this.desc = desc;
+		this.aut = aut;
+		this.respondant = respondant;
+		this.stat = stat;
+		this.types = types;
+	}
+	public String getStat() {
+		return stat;
+	}
+	public void setStat(String stat) {
+		this.stat = stat;
+	}
+	public String getTypes() {
+		return types;
+	}
+	public void setTypes(String types) {
+		this.types = types;
+	}
 	public double getAmount() {
 		return amount;
 	}

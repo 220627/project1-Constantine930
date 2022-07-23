@@ -26,9 +26,13 @@ public class reimDAO {
 						rs.getString("reim_desc"),
 						A.UserByID(rs.getInt("reim_auth")),
 						A.UserByID(rs.getInt("reim_res")),
-						rs.getInt("reim_status_id"),
-						rs.getInt("reim_type_id")
+						A.StatByID(rs.getInt("reim_status_id")),
+						A.TypeBYID(rs.getInt("reim_type_id"))
 						);
+				Bob.setAuth(rs.getInt("reim_auth"));
+				Bob.setRes(rs.getInt("reim_res"));
+				Bob.setStatus(rs.getInt("reim_status_id"));
+				Bob.setType(rs.getInt("reim_type_id"));
 				bob.add(Bob);}
 				return bob;
 		}else  if(ID!=0){
@@ -45,9 +49,11 @@ public class reimDAO {
 						rs.getString("reim_desc"),
 						rs.getInt("reim_auth"),
 						rs.getInt("reim_res"),
-						rs.getInt("reim_status_id"),
-						rs.getInt("reim_type_id")
+						A.StatByID(rs.getInt("reim_status_id")),
+						A.TypeBYID(rs.getInt("reim_type_id"))
 						);
+				Bob.setStatus(rs.getInt("reim_status_id"));
+				Bob.setType(rs.getInt("reim_type_id"));
 				bob.add(Bob);
 			}
 				return bob;
