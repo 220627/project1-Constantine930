@@ -5,7 +5,6 @@ import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 
-import P1attempt2.models.reimstatus;
 import P1attempt2.models.users;
 import P1attempt2.util.ConUtil;
 
@@ -115,5 +114,4 @@ public class Authentic {
 			e.printStackTrace();
 		}
 		return null;}
-
 }

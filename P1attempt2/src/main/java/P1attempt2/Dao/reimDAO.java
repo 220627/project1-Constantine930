@@ -74,6 +74,11 @@ public class reimDAO {
 			ps.setInt(1, stat);
 			ps.setInt(2,id);
 			ps.executeUpdate();
+			//IDEA UPDATE TIME WHEN time timed :)
+			//String sql2= "Update ers_reim set reim_sub=now() where reim_id =?;"
+			//PreparedStatement ps2=Conn.prepareStatement(sql2);
+			//ps.setInt(1,id);
+			//ps.executeUpdate;
 			System.out.println("reim status with id " + id + " Updated to status " +stat);
 			return true;
 			}else{System.out.println("No permision/bad permission");return false;}
@@ -168,8 +173,5 @@ public class reimDAO {
 		return false;
 		
 	}
-
-
-
 }
 
