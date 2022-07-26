@@ -64,3 +64,14 @@
 2022-07-23 15:23:53 INFO  reimCon:47 - stuff has been viewed by Status ID
 2022-07-23 15:23:56 INFO  reimCon:47 - stuff has been viewed by Status ID
 2022-07-23 15:23:59 INFO  reimCon:47 - stuff has been viewed by Status ID
+2022-07-26 10:32:47 INFO  AuthentiCon:35 - User Logged in!
+2022-07-26 10:40:05 WARN  reimCon:37 - Someone did me dirty
+2022-07-26 10:41:06 WARN  reimCon:64 - Request without a ses is a no go
+2022-07-26 10:41:21 INFO  AuthentiCon:35 - User Logged in!
+2022-07-26 10:41:24 WARN  reimCon:61 - New request has been made But something went wrong
+2022-07-26 10:44:28 INFO  reimCon:57 - New request has been made
+2022-07-26 10:46:18 WARN  reimCon:64 - Request without a ses is a no go
+2022-07-26 10:46:21 INFO  AuthentiCon:35 - User Logged in!
+2022-07-26 10:46:24 INFO  reimCon:57 - New request has been made
+2022-07-26 10:47:36 INFO  reimCon:57 - New request has been made
+2022-07-26 10:48:16 INFO  reimCon:57 - New request has been made

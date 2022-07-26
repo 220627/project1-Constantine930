@@ -48,7 +48,23 @@ public Handler ViewByStat=(ctx)->{
 		ctx.result(rSon);
 		ctx.status(200);} else {ctx.result("ses ain't available");}
 };
-
+public Handler ReimReq=(ctx)->{
+	if(AuthentiCon.ses!=null) {
+		String bd = ctx.body();
+		Gson gson = new Gson();
+		ers_reim reim = gson.fromJson(bd, ers_reim.class);
+		if (rDao.NewReimReq(reim)) {
+			log.info("New request has been made");
+			ctx.result("New Request has been made");
+			ctx.status(201);
+			
+		}else {log.warn("New request has been made But something went wrong");
+			ctx.status(406);
+		}
+	}else {log.warn("Request without a ses is a no go");
+	ctx.result("Smack YOU");
+	ctx.status(401);}
+};
 
 }
 
