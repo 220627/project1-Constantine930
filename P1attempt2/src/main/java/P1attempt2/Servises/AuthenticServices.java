@@ -1,12 +1,13 @@
 package P1attempt2.Servises;
 
 import P1attempt2.Dao.Authentic;
+import P1attempt2.models.users;
 
 public class AuthenticServices {
 
 	Authentic aDao = new Authentic();
-	public String login(String name, String pass) {
-		if(aDao.Login(name, pass)!=null) {return name;
+	public users login(String name, String pass) {
+		if(aDao.Login(name, pass)!=null) {return aDao.Login(name, pass);
 		}else {return null;}
 	}
 	

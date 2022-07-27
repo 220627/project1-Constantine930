@@ -55,7 +55,7 @@ public class users {
 	}
 	@Override
 	public String toString() {
-		return "users [fname=" + fname + ", lname=" + lname + ", perm=" + perm + "]";
+		return "users [fname=" + fname + ", lname=" + lname + ", perm=" + perm + ", id="+ ID + "]";
 	}
 
 	public users(String name, String pass, String fname, String lname, String email, int perm) {

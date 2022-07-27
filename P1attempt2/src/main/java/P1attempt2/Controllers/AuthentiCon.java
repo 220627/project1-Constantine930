@@ -28,12 +28,14 @@ public class AuthentiCon {
 		
 		if(AS.loginSp(lDto.getName(),lDto.getPass())!=0) {
 			ID = AS.loginSp(lDto.getName(),lDto.getPass());
-			System.out.println(ID);}
+			System.out.println(ID);
+			lDto.setID(ID);}
 		
 		if(AS.login(lDto.getName(), lDto.getPass())!=null) {
 			ses = ctx.req.getSession();
 			Lo.info("User Logged in!");
-			ctx.result("we welcome you " + lDto.getName());
+			String Hopethisworks =gson.toJson(AS.login(lDto.getName(), lDto.getPass()));
+			ctx.result(Hopethisworks);
 			ctx.status(202);
 			}else {ctx.result("NO, Wrong pass or name");
 			Lo.warn("User Failed to Login");
