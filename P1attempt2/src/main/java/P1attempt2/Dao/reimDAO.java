@@ -6,6 +6,7 @@ import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.util.ArrayList;
 
+import P1attempt2.Controllers.AuthentiCon;
 import P1attempt2.models.ers_reim;
 import P1attempt2.util.ConUtil;
 
@@ -146,14 +147,15 @@ public class reimDAO {
 		}
 		return null;
 	}
-	public boolean  NewReimReq(ers_reim reim) {
+	public boolean  NewReimReq(ers_reim reim,int ID) {
 		try(Connection Conn= ConUtil.getConnection()){
+			
 			String sql = "Insert into ers_reim(reim_Amount, reim_Sub, reim_Desc, reim_auth, reim_res, reim_status_ID, reim_type_ID)Values(?,now(),?,?,?,3,?);";
 			PreparedStatement ps=Conn.prepareStatement(sql);
 			ps.setDouble(1, reim.getAmount());
 			//ps.setDate(2, reim.getTime());
 			ps.setString(2, reim.getDesc());
-			ps.setInt(3, reim.getAuth());
+			ps.setInt(3, ID);
 			ps.setInt(4, reim.getRes());
 			ps.setInt(5, reim.getType());
 			ps.executeUpdate();

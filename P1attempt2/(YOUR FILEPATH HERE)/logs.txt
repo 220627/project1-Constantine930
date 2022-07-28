@@ -193,3 +193,28 @@
 2022-07-28 11:36:32 INFO  reimCon:23 - stuff has been viewed
 2022-07-28 11:41:10 INFO  reimCon:23 - stuff has been viewed
 2022-07-28 11:42:03 INFO  reimCon:23 - stuff has been viewed
+2022-07-28 13:32:36 INFO  AuthentiCon:36 - User Logged in!
+2022-07-28 13:33:46 INFO  AuthentiCon:36 - User Logged in!
+2022-07-28 13:37:18 INFO  AuthentiCon:36 - User Logged in!
+2022-07-28 13:44:12 INFO  AuthentiCon:36 - User Logged in!
+2022-07-28 13:47:27 WARN  reimCon:64 - Request without a ses is a no go
+2022-07-28 13:47:37 INFO  AuthentiCon:36 - User Logged in!
+2022-07-28 13:47:58 INFO  reimCon:57 - New request has been made
+2022-07-28 13:49:06 INFO  reimCon:23 - stuff has been viewed
+2022-07-28 13:50:53 INFO  reimCon:57 - New request has been made
+2022-07-28 13:51:01 INFO  reimCon:23 - stuff has been viewed
+2022-07-28 13:55:27 WARN  reimCon:64 - Request without a ses is a no go
+2022-07-28 13:55:32 INFO  AuthentiCon:36 - User Logged in!
+2022-07-28 13:55:39 INFO  reimCon:57 - New request has been made
+2022-07-28 13:55:47 INFO  reimCon:23 - stuff has been viewed
+2022-07-28 13:56:02 INFO  reimCon:23 - stuff has been viewed
+2022-07-28 13:56:04 INFO  reimCon:57 - New request has been made
+2022-07-28 13:56:07 INFO  reimCon:23 - stuff has been viewed
+2022-07-28 13:57:03 INFO  reimCon:57 - New request has been made
+2022-07-28 13:57:06 INFO  reimCon:23 - stuff has been viewed
+2022-07-28 14:01:10 INFO  AuthentiCon:36 - User Logged in!
+2022-07-28 14:01:13 INFO  reimCon:23 - stuff has been viewed
+2022-07-28 14:09:21 INFO  reimCon:23 - stuff has been viewed
+2022-07-28 14:10:12 INFO  reimCon:23 - stuff has been viewed
+2022-07-28 14:10:51 INFO  AuthentiCon:36 - User Logged in!
+2022-07-28 14:13:17 INFO  AuthentiCon:36 - User Logged in!

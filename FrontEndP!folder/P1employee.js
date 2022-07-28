@@ -1,6 +1,7 @@
 document.getElementById("GetReimb").onclick=GetReimb;
 const url ="http://localhost:3000"
-
+document.getElementById("GOReq").onclick=GoReq;
+document.getElementById("LogOut").onclick=LogOut;
 async function GetReimb(){
     let resp = await fetch(url+"/View")
     console.log(resp)
@@ -37,4 +38,11 @@ async function GetReimb(){
     }else{
         alert("something went wrong is java running?")
     }
+}
+async function GoReq(){
+    location.href="P1Html3.html"
+}
+async function LogOut(){
+    //Currently a pseudo log out
+    location.href="LoginPage.html"
 }

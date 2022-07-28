@@ -53,7 +53,7 @@ public Handler ReimReq=(ctx)->{
 		String bd = ctx.body();
 		Gson gson = new Gson();
 		ers_reim reim = gson.fromJson(bd, ers_reim.class);
-		if (rDao.NewReimReq(reim)) {
+		if (rDao.NewReimReq(reim,AuthentiCon.ID)) {
 			log.info("New request has been made");
 			ctx.result("New Request has been made");
 			ctx.status(201);
