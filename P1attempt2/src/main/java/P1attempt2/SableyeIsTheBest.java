@@ -65,6 +65,7 @@ public class SableyeIsTheBest {
 		app.put("/Reim/:id", RC.UpdateStat);
 		app.get("/View/:status", RC.ViewByStat);
 		app.put("/Reimreq", RC.ReimReq);
+		app.get("/logout", AC.logoutHand);
 	}
 		
 		

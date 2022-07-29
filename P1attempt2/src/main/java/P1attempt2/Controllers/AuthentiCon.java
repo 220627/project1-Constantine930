@@ -17,6 +17,13 @@ public class AuthentiCon {
 	public static HttpSession ses;
 	public static int perm;
 	public static int ID;
+	public Handler logoutHand=(ctx)->{
+		Lo.info("User Loged out");
+		ctx.result("You are out");
+		ctx.status(200);
+		perm=0;
+		ID=0;
+		ses=null;};
 	public Handler loginHand=(ctx)->{
 		String body = ctx.body();
 		Gson gson = new Gson();
@@ -41,4 +48,5 @@ public class AuthentiCon {
 			Lo.warn("User Failed to Login");
 				ctx.status(401);}
 	};
-}
+	}
+

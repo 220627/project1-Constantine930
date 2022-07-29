@@ -43,6 +43,10 @@ async function GoReq(){
     location.href="P1Html3.html"
 }
 async function LogOut(){
-    //Currently a pseudo log out
-    location.href="LoginPage.html"
+    let Gem = await fetch(url+"/logout")
+    if (Gem.status==200){
+    location.href="LoginPage.html"}
+    else{
+        document.getElementById("Head").innerText="Something is wrong with Log out"
+    }
 }

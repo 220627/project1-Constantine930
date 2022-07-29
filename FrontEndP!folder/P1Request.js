@@ -28,5 +28,10 @@ async  function GoBack(){
 }
 async   function LogOut(){
     //still pseudo logout
-    location.href="LoginPage.html"
+    let Gem = await fetch(url+"/logout")
+    if (Gem.status==200){
+    location.href="LoginPage.html"}
+    else{
+        document.getElementById("Head").innerText="Something is wrong with Log out"
+    }
 }
