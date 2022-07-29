@@ -12,12 +12,21 @@ crossorigin="anonymous">
 <body>
     <h1>This is the Header</h1>
     <h4>Rules!!</h4>
+     
     <div id="table-row" class="row" style="justify-content:center ;">
         <table class="center table table-bordered table-dark table-striped" style="width:85%; border-radius:10; border-left: 10em;">
+            
+           
         <input type="button" value="See Your Reimbersments" id="GetReimb" style="width: 20%;">
+        <select name="Stat" id="stat" style="width: 10%">
+                <option value=1>Accepted</option>
+                <option value=2>Denied</option>
+                <option value=3>Pending</option>
+        </select>  
         <input type="button" value="Make a new Request" id="GOReq" style="width: 30%;">
         <input type="button" name="LogOut" id="LogOut" value="Log Out" style="width: 20%; background-color: rgb(174, 26, 26);">
-            <thead>
+        
+        <thead>
                 <tr>
                   <th>Amount requested</th>
                   <th>Date submitted</th>
@@ -35,8 +44,8 @@ crossorigin="anonymous">
             <tbody id="requestBody">
             </tbody>
         </table>
-        <input type="button" value="Accept" id="Accept"><input type="button" value="Deny" id="Deny"><input type="button" value="GoBeAnEmployee" id="Emp">
-        
+        <input type="button" value="Accept" id="Accept"><input type="button" value="Deny" id="Deny">
     </div>
+    <script src="P1man.js"></script>
 </body>
 </html>

@@ -6,7 +6,8 @@ async function GetReimb(){
     while(document.getElementById("requestBody").rows.length > 0) {
         document.getElementById("requestBody").deleteRow(0);
       }
-    let resp = await fetch(url+"/View")
+    let stat = document.getElementById("stat").value;
+    let resp = await fetch(url+"/View/"+stat)
     console.log(resp)
     if(resp.status === 200){
 
@@ -20,13 +21,21 @@ async function GetReimb(){
             let cell5 = document.createElement("td")
             let cell6 = document.createElement("td")
             let cell7 = document.createElement("td")
+            let cell8 = document.createElement("td")
+            let cell9 = document.createElement("td")
+            let cell10 = document.createElement("td")
+            let cell11 = document.createElement("td")
             cell.innerHTML = Bob.amount
             cell2.innerHTML = Bob.time
             cell3.innerHTML = Bob.desc
             cell4.innerHTML = Bob.auth
-            cell5.innerHTML = Bob.res
-            cell6.innerHTML = Bob.stat
-            cell7.innerHTML = Bob.types
+            cell5.innerHTML = Bob.aut.fname
+            cell6.innerHTML = Bob.aut.lname
+            cell7.innerHTML = Bob.res
+            cell8.innerHTML = Bob.respondant.fname
+            cell9.innerHTML = Bob.respondant.lname
+            cell10.innerHTML = Bob.stat
+            cell11.innerHTML = Bob.types
             row.appendChild(cell)
             row.appendChild(cell2)
             row.appendChild(cell3)
@@ -34,6 +43,10 @@ async function GetReimb(){
             row.appendChild(cell5)
             row.appendChild(cell6)
             row.appendChild(cell7)
+            row.appendChild(cell8)
+            row.appendChild(cell9)
+            row.appendChild(cell10)
+            row.appendChild(cell11)
 
             document.getElementById("requestBody").appendChild(row)
 
@@ -43,7 +56,7 @@ async function GetReimb(){
     }
 }
 async function GoReq(){
-    location.href="P1Html3.html"
+    location.href="P1makerequestMan.html"
 }
 async function LogOut(){
     let Gem = await fetch(url+"/logout")
