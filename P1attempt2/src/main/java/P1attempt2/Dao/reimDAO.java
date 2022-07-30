@@ -22,6 +22,7 @@ public class reimDAO {
 			while(rs.next()) {
 				//System.out.println("all good");
 				ers_reim Bob=new ers_reim(
+						rs.getInt("reim_id"),
 						rs.getDouble("reim_amount"),
 						rs.getDate("reim_sub"),
 						rs.getString("reim_desc"),
@@ -67,12 +68,17 @@ public class reimDAO {
 	}
 	return null;
 }
-	public boolean UpdateStatus(int perm, int stat, int id) {
+	public boolean UpdateStatus(int perm, int stat, int id, int I) {
 		try(Connection Conn= ConUtil.getConnection()){
 			if (perm==1) {
 			String sql = "Update ers_reim set reim_status_id=? where reim_id =?;";
 			PreparedStatement ps=Conn.prepareStatement(sql);
 			ps.setInt(1, stat);
+			ps.setInt(2,id);
+			ps.executeUpdate();
+			sql = "Update ers_reim set reim_res=? where reim_id =?;";
+			ps=Conn.prepareStatement(sql);
+			ps.setInt(1, I);
 			ps.setInt(2,id);
 			ps.executeUpdate();
 			//IDEA UPDATE TIME WHEN time timed :)
@@ -86,10 +92,7 @@ public class reimDAO {
 		}catch(SQLException e){
 			System.out.println("Something is off");
 			e.printStackTrace();
-		}
-		
-		
-		
+		}	
 		
 		return false;}
 	public ArrayList<ers_reim> ViewreimByStatus(int perm , int ID, int stat ) {
@@ -103,6 +106,7 @@ public class reimDAO {
 				ResultSet rs = ps.executeQuery();
 				while(rs.next()) {
 					ers_reim Bob=new ers_reim(
+							rs.getInt("reim_id"),
 							rs.getDouble("reim_amount"),
 							rs.getDate("reim_sub"),
 							rs.getString("reim_desc"),

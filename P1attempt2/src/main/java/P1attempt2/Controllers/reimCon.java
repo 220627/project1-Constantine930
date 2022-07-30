@@ -28,7 +28,7 @@ public Handler UpdateStat=(ctx)->{
 	if (AuthentiCon.ses!=null) {
 	int id = Integer.parseInt(ctx.pathParam("id"));
 	int stat = Integer.parseInt(ctx.body());
-	if(rDao.UpdateStatus(AuthentiCon.perm, stat, id)) {
+	if(rDao.UpdateStatus(AuthentiCon.perm, stat, id, AuthentiCon.ID)) {
 		log.info("Status Updated");
 		ctx.status(202);
 	}else {

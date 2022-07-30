@@ -371,3 +371,76 @@
 2022-07-29 13:32:40 INFO  reimCon:23 - stuff has been viewed
 2022-07-29 13:34:35 INFO  reimCon:23 - stuff has been viewed
 2022-07-29 13:34:40 INFO  reimCon:23 - stuff has been viewed
+2022-07-30 14:56:12 INFO  AuthentiCon:43 - User Logged in!
+2022-07-30 14:56:16 INFO  reimCon:23 - stuff has been viewed
+2022-07-30 15:05:04 INFO  reimCon:23 - stuff has been viewed
+2022-07-30 15:05:18 INFO  AuthentiCon:43 - User Logged in!
+2022-07-30 15:05:22 INFO  reimCon:23 - stuff has been viewed
+2022-07-30 15:07:18 INFO  reimCon:47 - stuff has been viewed by Status ID
+2022-07-30 15:07:24 INFO  reimCon:47 - stuff has been viewed by Status ID
+2022-07-30 15:07:25 INFO  reimCon:47 - stuff has been viewed by Status ID
+2022-07-30 15:07:27 INFO  reimCon:47 - stuff has been viewed by Status ID
+2022-07-30 15:07:33 INFO  reimCon:47 - stuff has been viewed by Status ID
+2022-07-30 15:08:31 INFO  reimCon:47 - stuff has been viewed by Status ID
+2022-07-30 15:08:37 INFO  reimCon:47 - stuff has been viewed by Status ID
+2022-07-30 15:08:44 INFO  reimCon:47 - stuff has been viewed by Status ID
+2022-07-30 15:08:52 INFO  reimCon:47 - stuff has been viewed by Status ID
+2022-07-30 15:10:14 INFO  AuthentiCon:21 - User Loged out
+2022-07-30 15:10:34 INFO  AuthentiCon:43 - User Logged in!
+2022-07-30 15:10:36 INFO  reimCon:47 - stuff has been viewed by Status ID
+2022-07-30 15:10:41 INFO  reimCon:47 - stuff has been viewed by Status ID
+2022-07-30 15:15:59 INFO  reimCon:47 - stuff has been viewed by Status ID
+2022-07-30 15:16:03 INFO  reimCon:47 - stuff has been viewed by Status ID
+2022-07-30 15:23:41 INFO  reimCon:47 - stuff has been viewed by Status ID
+2022-07-30 15:23:45 INFO  reimCon:32 - Status Updated
+2022-07-30 15:40:34 INFO  reimCon:32 - Status Updated
+2022-07-30 15:40:35 INFO  reimCon:47 - stuff has been viewed by Status ID
+2022-07-30 15:41:18 INFO  reimCon:32 - Status Updated
+2022-07-30 15:41:21 INFO  reimCon:32 - Status Updated
+2022-07-30 15:41:22 INFO  reimCon:47 - stuff has been viewed by Status ID
+2022-07-30 15:41:25 INFO  reimCon:32 - Status Updated
+2022-07-30 15:41:27 INFO  reimCon:32 - Status Updated
+2022-07-30 15:41:33 INFO  reimCon:47 - stuff has been viewed by Status ID
+2022-07-30 15:42:00 INFO  reimCon:32 - Status Updated
+2022-07-30 15:42:03 INFO  reimCon:47 - stuff has been viewed by Status ID
+2022-07-30 15:42:51 INFO  reimCon:32 - Status Updated
+2022-07-30 15:42:51 INFO  reimCon:47 - stuff has been viewed by Status ID
+2022-07-30 15:45:27 INFO  reimCon:32 - Status Updated
+2022-07-30 15:45:27 INFO  reimCon:47 - stuff has been viewed by Status ID
+2022-07-30 15:45:32 INFO  reimCon:32 - Status Updated
+2022-07-30 15:45:32 INFO  reimCon:47 - stuff has been viewed by Status ID
+2022-07-30 15:45:59 INFO  reimCon:32 - Status Updated
+2022-07-30 15:45:59 INFO  reimCon:47 - stuff has been viewed by Status ID
+2022-07-30 15:45:59 INFO  reimCon:32 - Status Updated
+2022-07-30 15:46:01 INFO  reimCon:47 - stuff has been viewed by Status ID
+2022-07-30 15:46:02 INFO  reimCon:32 - Status Updated
+2022-07-30 15:46:02 INFO  reimCon:47 - stuff has been viewed by Status ID
+2022-07-30 15:46:29 INFO  reimCon:32 - Status Updated
+2022-07-30 15:46:29 INFO  reimCon:47 - stuff has been viewed by Status ID
+2022-07-30 15:46:32 INFO  reimCon:32 - Status Updated
+2022-07-30 15:46:33 INFO  reimCon:47 - stuff has been viewed by Status ID
+2022-07-30 15:46:35 INFO  reimCon:32 - Status Updated
+2022-07-30 15:46:35 INFO  reimCon:47 - stuff has been viewed by Status ID
+2022-07-30 15:46:38 INFO  reimCon:32 - Status Updated
+2022-07-30 15:46:39 INFO  reimCon:47 - stuff has been viewed by Status ID
+2022-07-30 15:46:42 INFO  reimCon:32 - Status Updated
+2022-07-30 15:46:42 INFO  reimCon:47 - stuff has been viewed by Status ID
+2022-07-30 15:46:43 INFO  reimCon:47 - stuff has been viewed by Status ID
+2022-07-30 15:46:45 INFO  reimCon:47 - stuff has been viewed by Status ID
+2022-07-30 15:46:50 INFO  reimCon:47 - stuff has been viewed by Status ID
+2022-07-30 15:46:54 INFO  reimCon:47 - stuff has been viewed by Status ID
+2022-07-30 15:47:02 INFO  reimCon:47 - stuff has been viewed by Status ID
+2022-07-30 15:47:05 INFO  reimCon:47 - stuff has been viewed by Status ID
+2022-07-30 15:47:09 INFO  reimCon:47 - stuff has been viewed by Status ID
+2022-07-30 15:50:08 INFO  reimCon:32 - Status Updated
+2022-07-30 15:50:08 INFO  reimCon:47 - stuff has been viewed by Status ID
+2022-07-30 15:50:17 INFO  AuthentiCon:21 - User Loged out
+2022-07-30 15:50:33 INFO  AuthentiCon:43 - User Logged in!
+2022-07-30 15:50:35 INFO  reimCon:47 - stuff has been viewed by Status ID
+2022-07-30 15:50:38 INFO  reimCon:47 - stuff has been viewed by Status ID
+2022-07-30 15:50:40 INFO  reimCon:47 - stuff has been viewed by Status ID
+2022-07-30 15:50:43 INFO  reimCon:47 - stuff has been viewed by Status ID
+2022-07-30 15:50:46 INFO  reimCon:47 - stuff has been viewed by Status ID
+2022-07-30 15:50:49 INFO  reimCon:32 - Status Updated
+2022-07-30 15:50:51 INFO  reimCon:32 - Status Updated
+2022-07-30 15:50:52 INFO  reimCon:47 - stuff has been viewed by Status ID

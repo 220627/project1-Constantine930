@@ -3,6 +3,13 @@ package P1attempt2.models;
 import java.sql.Date;
 
 public class ers_reim {
+	private int reim_ID;
+	public int getReim_ID() {
+		return reim_ID;
+	}
+	public void setReim_ID(int reim_ID) {
+		this.reim_ID = reim_ID;
+	}
 	private double amount;
 	private Date time;
 	private String desc;
@@ -100,7 +107,6 @@ public class ers_reim {
 		this.status = status;
 		this.type = type;
 	}
-	
 	public ers_reim(double amount, Date time, String desc, users aut, users respondant, int status, int type) {
 		super();
 		this.amount = amount;
@@ -127,4 +133,31 @@ public class ers_reim {
 	public String toString() {
 		return "ers_reim [amount=" + amount + ", time=" + time + ", desc=" + desc + ", status=" + status + ", type=" + type + "]";
 	}
+	public ers_reim(int reim_ID, double amount, Date time, String desc, users aut, int res, users respondant,
+			String stat, String types) {
+		super();
+		this.reim_ID = reim_ID;
+		this.amount = amount;
+		this.time = time;
+		this.desc = desc;
+		this.aut = aut;
+		this.res = res;
+		this.respondant = respondant;
+		this.stat = stat;
+		this.types = types;
+	}
+	public ers_reim(int reim_ID, double amount, Date time, String desc, users aut, users respondant, String stat,
+			String types) {
+		super();
+		this.reim_ID = reim_ID;
+		this.amount = amount;
+		this.time = time;
+		this.desc = desc;
+		this.aut = aut;
+		this.respondant = respondant;
+		this.stat = stat;
+		this.types = types;
+	}
+
+
 }
