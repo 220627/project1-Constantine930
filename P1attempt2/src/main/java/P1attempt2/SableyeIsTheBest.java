@@ -36,8 +36,8 @@ public class SableyeIsTheBest {
 // (___()'`;
 // /,    /`
 // \\"--\\
-		System.out.println("========Welcome to god darn in etnertainment========");
-		//try with resources block
+		System.out.println("========Welcome to Sableye is the Best in Entetainment inc========");
+		
 		try(Connection con = ConUtil.getConnection()){
 		System.out.println("Succs much less Success :)");
 
@@ -45,21 +45,10 @@ public class SableyeIsTheBest {
 			System.out.println("connection failed..");
 			e.printStackTrace();
 		}
-		//Employee newEmp = new Employee("Cdog", "Not a Dog", 2);
-		//edao.insertEmp(newEmp);
-
-		//Role newRole = new Role("Dishwasher",69000);
-		//rdao.insertRole(newRole);
-		//System.out.println(rdao.getRoleByID(3));
-		//System.out.println(edao.getEmployees());
 		Javalin app = Javalin.create( config -> {config.enableCorsForAllOrigins();} ).start(3000);
 		AuthentiCon AC = new AuthentiCon();
 		reimCon RC = new reimCon();
 
-		//app.get("/employees", EC.getEmpHandler);
-		//app.post("/employees", EC.insertEmpHandler);
-		
-		//app.delete("/employees",EC.deleteEmp);
 		app.post("/login", AC.loginHand);
 		app.get("/View", RC.Viewreim);
 		app.put("/Reim/:id", RC.UpdateStat);
